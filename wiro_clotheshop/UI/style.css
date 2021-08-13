@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+@font-face {
+    font-family: stadtmitte;
+    src: url(Stadtmitte-BlackItalic.otf);
+}
+@font-face {
+    font-family: stadtmitte-normal;
+    src: url(Stadtmitte-Normal.otf);
+}
+
+* {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    user-select: none;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.panel {
+    box-sizing: border-box;
+    padding-top: 5px;
+    display: flex;
+    margin-left: 50px;
+    height: 720px;
+    width: 450px;
+    background-color: rgba(0, 0, 0, 0.288);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: relative;
+    transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(-6deg) rotateY(15deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+    transition: all 400ms;
+}
+
+.panel:hover {
+    transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(-5deg) rotateY(10deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+}
+
+.img-holder {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logom {
+    display: inline-block; 
+    width: 140px; 
+    margin-left: auto; 
+    margin-right: auto;
+    transition: all 500ms;
+}
+
+#logom:hover {
+    width: 150px;
+}
+
+.minipanel-kiyafetler {
+    display: inline-flex;
+    height: 550px;
+    width: 100%;
+    margin-top: 0px;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.minipanel-kiyafetler::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+.minipanel-kiyafetler::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+.clothe-buttons {
+    display: block;
+    width: 100%;
+    height: 48px;
+    background: rgb(0,0,0);
+    background: linear-gradient(59deg, rgba(0,0,0,0.9360119047619048) 0%, rgba(0,0,0,0.13209033613445376) 100%);
+    border: none;
+    font-size: 38px;
+    font-family: stadtmitte;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.550);
+    letter-spacing: 1px;
+    transition: all 300ms;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.clothe-buttons:hover {
+    border-bottom: 1px solid rgba(245,132,34,1);
+}
+
+.clothe-number-holder {
+    width: 100%;
+    height: 100px;
+    float: left;
+}
+
+.left-change-holder {
+    width: 45%;
+    height: 70px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.fast-change-holder {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.maxnumbertxt {
+    font-family: stadtmitte-normal;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding-left: 40px;
+}
+
+.solsag {
+    width: 40px;
+    height: 40px;
+    margin-left: -10px;
+}
+
+.sagsol {
+    width: 40px;
+    height: 40px;
+    margin-left: -10px;
+}
+
+.cls-1 {
+    transition: all 300ms;
+}
+
+.solsag:hover .cls-1 {
+    fill: rgb(236, 138, 73);
+}
+
+.sagsol:hover .cls-1 {
+    fill: rgb(236, 138, 73);
+}
+
+
+.clothe-index-text {
+    width: 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.550);
+    font-size: 17px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.alt-buttons-holder {
+    width: 450px;
+    display: inline-flex;
+}
+
+.alt-buttons {
+    position: relative;
+    display: inline-block;
+    width: 143px;
+    height: 50px;
+    background-color: rgba(17, 17, 17, 0.350);
+    outline: none;
+    border: none;
+    box-shadow: 0 3px 1px -2px white;
+    margin-top: 35px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 14px;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.alt-buttons:hover {
+    overflow: hidden;
+    width: 143px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 3px 1px -2px rgb(0, 132, 255);
+}
+
+.fast-clothe-change-holder{
+    height: 410px;
+    width: 55px;
+    background-color: rgba(17, 17, 17, 0.550);
+    display: inline-block;
+    position: absolute;
+    top: 15%;
+    left: 97%;
+    margin-left: 15px;
+    box-sizing: border-box;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+.fast-clothe-change-button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding-right: 40px;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 12px;
+}
+
+.fast-clothe-change-button:hover {
+    background: rgb(233,64,87);
+    background: linear-gradient(229deg, rgba(233,64,87,1) 15%, rgba(242,113,33,1) 100%);
+}
+
+.fast-clothe-change-ikon {
+    width: 45px;
+    box-sizing: border-box;
+    padding-right: 10px;
+    padding-top: 3px;
+}
+
+.ode-panel-holder {
+    position: absolute;
+    left: 50%;
+    top: 7%;
+    width: 650px;
+    height: 400px;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    z-index: 99!important;
+}
+
+.ode-panel-upside {
+    display: inline-flex;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 100%;
+    height: 67%;  
+    background-color: rgba(0, 0, 0, 0.588);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding-top: 50px;
+    align-items: center;
+    flex-direction: column !important;
+}
+
+.ode-panel-bottomside {
+    display: inline-flex;
+    margin-top: 5px;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    width: 100%;
+    height: 15%;
+    background-color: rgba(0, 0, 0, 0.588);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+}
+
+.ode-panel-text {
+    height: 30px;
+    margin-bottom: 0;
+    font-family:sans-serif;
+    font-size: 20px;
+}
+
+.ode-panel-btn {
+    width: 20%;
+    height: 40px;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    margin-left: 5px;
+    font-size: 17px;
+}
+
+#satin-al-btn {
+    background-color: rgb(76, 173, 80);
+    transition: all 300ms;
+}
+
+#satin-al-btn:hover {
+    background-color: rgb(63, 141, 65);
+}
+
+#iptal-et-btn {
+    background-color: rgb(210, 60, 50);
+    transition: all 300ms;
+}
+
+#iptal-et-btn:hover {
+    background-color: rgb(163, 48, 39);
+}
+
+#geri-dön-btn {
+    background-color: rgb(159, 157, 159);
+    transition: all 300ms;
+}
+
+#geri-dön-btn:hover {
+    background-color: rgb(121, 120, 121);
+}
+
+
+.dark {
+    background-color: rgba(0, 0, 0, 0.15);
+    height: 100vh;
+    opacity: 1;
+    z-index: 99!important;
+}
