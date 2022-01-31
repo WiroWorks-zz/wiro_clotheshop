@@ -324,6 +324,8 @@ end)
 
 RegisterNUICallback('updateclothes', function(data, cb)
     Citizen.Wait(0)
+    InvalidateIdleCam()     -- stops cam mode
+    N_0x9e4cfff989258472()  -- stops cam mode
     SetPedArmour(PlayerPedId(),0.0)
     toggleClothing[data["name"]] = nil
     selectedValue = has_value(drawable_names, data["name"])
@@ -438,6 +440,8 @@ end)
 
 RegisterNUICallback('yon', function(data, cb)
     SetEntityHeading(PlayerPedId(), GetEntityHeading(PlayerPedId()) + data.yon)
+    InvalidateIdleCam()     -- stops cam mode
+    N_0x9e4cfff989258472()  -- stops cam mode
 end)
 
 -- Create Blips
